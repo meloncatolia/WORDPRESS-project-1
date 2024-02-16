@@ -1,0 +1,62 @@
+* { /* относится ко всей странице целиком */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container { /* выравнивание содержимого по центру страницы с помощью контейнера */
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo { /* (main_bg.png) ) фон в верхней первой части страницы, начало описания интенсива */
+    height: 800px;
+    background: url('../img/main_bg.png') center center/cover no-repeat;
+    /* url('.../путь картинки)', позиция картинки (х,у)/размер картинки (cover - растяжение картинки), no-repeat (повторение картинки (no-repeat - картинка не повторяется) */
+    /* слэш между позицией и размером обязателен. зачем? просто да, просто обязателен */
+    padding: 39px 0px 62px 0px;
+}
+
+.logo .logo_img { /* (photo.jpg.png) настройка логотипа, позиционирование и выравнивание */
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text { /* (WordPress интенсив) текст под логотипом, шрифт и выравнивание */
+    color: #ffffff;
+    font-family: Roboto; /* стиль шрифта */
+    font-size: 15px; /* размер шрифта */
+    font-weight: 500; /* толщина шрифта */
+    line-height: 24px; 
+    text-transform: uppercase; /* жирный шрифт */
+    text-align: center;
+    margin-top: 14px;
+}
+
+h1 {
+    margin-top: 53px;
+}
+
+.title {
+    color: rgb(249, 191, 59);
+    font-family: "Roboto - Black";
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.title {
+
+}
+
+.simple .title_big {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto - Black";
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+}
