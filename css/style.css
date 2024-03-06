@@ -1,15 +1,18 @@
-* { /* относится ко всей странице целиком */
+/* относится ко всей странице целиком */
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.container { /* выравнивание содержимого по центру страницы с помощью контейнера */
+/* выравнивание содержимого по центру страницы с помощью контейнера */
+.container { 
     width: 1140px;
     margin: 0 auto;
 }
 
-.promo { /* (main_bg.png) ) фон в верхней первой части страницы, начало описания интенсива */
+/* Первый блок сайта. (main_bg.png) Фон в верхней первой части страницы, начало описания интенсива */
+.promo { 
     height: 800px;
     background: url('../img/main_bg.png') center center/cover no-repeat;
     /* url('.../путь картинки)', позиция картинки (х,у)/размер картинки (cover - растяжение картинки), no-repeat (повторение картинки (no-repeat - картинка не повторяется) */
@@ -17,12 +20,14 @@
     padding: 39px 0px 62px 0px;
 }
 
-.logo .logo_img { /* (photo.jpg.png) настройка логотипа, позиционирование и выравнивание */
+/* (photo.jpg.png) настройка логотипа, позиционирование и выравнивание */
+.logo .logo_img { 
     display: block;
     margin: 0 auto;
 }
 
-.logo .logo_text { /* (WordPress интенсив) текст под логотипом, шрифт и выравнивание */
+/* (WordPress интенсив) текст под логотипом, шрифт и выравнивание */
+.logo .logo_text { 
     color: #ffffff;
     font-family: Roboto; /* стиль шрифта */
     font-size: 15px; /* размер шрифта */
@@ -37,7 +42,8 @@ h1 {
     margin-top: 53px;
 }
 
-.title { /* (Куда сложнее сделать это правильно!) шрифт и выравнивание */
+/* (Куда сложнее сделать это правильно!) */
+.title { 
     color: #f9bf3b;
     font-family: "Roboto - Black";
     font-size: 41px;
@@ -47,11 +53,13 @@ h1 {
     text-align: center;
 }
 
-h2.title { /* По факту это один элемент. Отличается от того, как если между тегами поставить пробел (вложенные элементы) */
+/* По факту это один элемент. Отличается от того, как если между тегами поставить пробел (вложенные элементы) */
+h2.title { 
     margin-top: 30px;
 }
 
-.simple .title_big { /* (Это просто!) шрифт и выравнивание */
+/* (Это просто!) */
+.simple .title_big { 
     color: rgb(255, 255, 255);
     font-family: "Roboto - Black";
     font-size: 80px;
@@ -61,7 +69,8 @@ h2.title { /* По факту это один элемент. Отличаетс
     margin-top: 21px;
 }
 
-.promo .promo_text { /* (Ежедневно в Росиии...) шрифт и выравнивание */
+/* (Ежедневно в Росиии...) */
+.promo .promo_text { 
     padding: 0 12px;
     margin-top: 23px;
     color: white;
@@ -73,13 +82,15 @@ h2.title { /* По факту это один элемент. Отличаетс
     text-align: center;
 }
 
-.promo .promo_text span { /* (БЕСПЛАТНОМ) */
+/* (БЕСПЛАТНОМ) */
+.promo .promo_text span { 
     color: #f9bf3b;
     font-family: "Roboto - Bold";
     font-weight: 700px;
 }
 
-.promo .promo_btn { /* Кнопка */
+/* (Записаться на интенсив!) Кнопка */
+.promo .promo_btn { 
     display: block;
     margin: 0px auto;
     margin-top: 73px;
@@ -104,7 +115,8 @@ h2.title { /* По факту это один элемент. Отличаетс
     margin-top: 73px;
 }
 
-.more .more_text { /* (узнать больше об интенсиве) */
+/* (Узнать больше об интенсиве) */
+.more .more_text { 
     color: #ffffff;
     font-family: "Roboto - Thin";
     font-size: 15px;
@@ -113,10 +125,73 @@ h2.title { /* По факту это один элемент. Отличаетс
     text-align: center;
 }
 
-.more .more_img { /* оформление стрелки под текстом */
+/* Стрелка */
+.more .more_img { 
     display: block;
     margin: 0 auto;
     margin-top: 13px;
 }
 
-/* 49:35 */
+/* Второй блок сайта */
+.waiting {
+    height: 607px;
+    background-color: #efefef;
+    padding: 85px 0 75px 0;
+}
+
+/* (Что вас ждёт в нашем интенсиве?) */
+.waiting .waiting_header {
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Разделитель */
+.waiting .waiting_divider {
+    background: #f9bf3b;
+    width: 220px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+/* (2 бесплатных полноценных обучающих вебинара, где:) */
+.waiting .waiting_subheader {
+    margin-top: 17px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content - Выравнивает элементы по главной оси; space-between - Промежуток между элементами */
+    /* flex-wrap; wrap (да, перенос) /или же/ nowrap (нет, без переноса)- Перенос содержимого на другую строку*/
+    /* align-items;  - Выравнивает элементы по поперечной оси */
+    margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+    width: 339px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%;
+}
+
+/* Подписи под картинками */
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
