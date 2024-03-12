@@ -22,7 +22,7 @@
 }
 
 /* (photo.jpg.png) настройка логотипа, позиционирование и выравнивание */
-.logo .logo_img { 
+.logo .logo_img, .present .present_img { 
     display: block;
     margin: 0 auto;
 }
@@ -91,7 +91,7 @@ h2.title {
 }
 
 /* (Записаться на интенсив!) Кнопка */
-.promo .promo_btn { 
+.promo .promo_btn, .present .present_btn { 
     display: block;
     margin: 0px auto;
     margin-top: 73px;
@@ -141,7 +141,7 @@ h2.title {
 }
 
 /* (Что вас ждёт в нашем интенсиве?) */
-.waiting .waiting_header, .finish .finish_header {
+.waiting .waiting_header, .finish .finish_header, .date .date_header {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -163,7 +163,7 @@ h2.title {
 }
 
 /* (2 бесплатных полноценных обучающих вебинара, где:) */
-.waiting .waiting_subheader {
+.waiting .waiting_subheader, .date .date_subheader {
     margin-top: 17px;
     color: #4a4a4a;
     font-family: Roboto;
@@ -200,12 +200,13 @@ h2.title {
     line-height: 21px;
 }
 
+/* Третий блок сайта */
 .optimization {
     min-height: 550px;
     padding: 102px 0 107px 0;
 }
 
-.optimization .optimization_header {
+.optimization .optimization_header, .date .date_wrapper .date_descr {
     margin-left: 391px;
     color: #299cbd;
     font-family: "Roboto - Black";
@@ -280,4 +281,63 @@ h2.title {
     height: 631px;
     background-color: #efefef;
     padding: 88px 0 88px 0;
+}
+
+.present .present_wrapper .present_text {
+    margin-top: 45px;
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.present .present_wrapper .present_btn {
+    margin-top: 51px;
+}
+
+.date .date_wrapper .date_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.date {
+    padding: 89px 0 50px 0;
+}
+
+.date .date_wrapper .date_header {
+    margin-top: 36px;
+}
+
+.date .date_wrapper .date_descr {
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: center;
+    
+}
+
+.date .date_wrapper .date_subheader {
+    margin-top: 25px;
+}
+
+.contacts {
+    height: 169px;
+    background-color: rgb(26, 26, 26);
+    padding: 58px 0 70px 0;
+}
+
+.contacts .contacts_wrapper .contacts_btn {
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.contacts .contacts_wrapper .contacts_btn .contacts_supp {
+    color: #888888;
+}
+
+.contacts .contacts_wrapper .contacts_btn .policy {
+    color: #888888;
 }
