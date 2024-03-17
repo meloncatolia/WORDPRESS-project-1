@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
 /* выравнивание содержимого по центру страницы с помощью контейнера */
 .container {
     position: relative;
@@ -46,9 +50,10 @@ h1 {
 /* (Куда сложнее сделать это правильно!) */
 .title { 
     color: #f9bf3b;
-    font-family: "Roboto - Black";
+    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-size: 41px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
@@ -62,13 +67,15 @@ h2.title {
 /* (Это просто!) */
 .simple .title_big { 
     color: rgb(255, 255, 255);
-    font-family: "Roboto - Black";
+    font-family: 'Roboto';
     font-size: 80px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     margin-top: 21px;
 }
+
+
 
 /* (Ежедневно в Росиии...) */
 .promo .promo_text { 
@@ -78,16 +85,15 @@ h2.title {
     font-size: 21px;
     font-weight: 300;
     line-height: 28px; /* Высота строки */
-    font-family: "Roboto Light";
-    font-weight: 300px;
+    font-family: "Roboto";
     text-align: center;
 }
 
 /* (БЕСПЛАТНОМ) */
 .promo .promo_text span { 
     color: #f9bf3b;
-    font-family: "Roboto - Bold";
-    font-weight: 700px;
+    font-family: "Roboto";
+    font-weight: 700;
 }
 
 /* (Записаться на интенсив!) Кнопка */
@@ -103,9 +109,9 @@ h2.title {
     background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
     /* : линейный-градиент(идёт вверх, цвет1 %, цвет2 %) */
     color: #ffffff;
-    font-family: "Roboto Condensed";
-    font-size: 21px;
-    font-weight: 400;
+    font-family: "Roboto";
+    font-size: 19px;
+    font-weight: 300;
     line-height: 24px;
     text-transform: uppercase;
     cursor: pointer; /* Взаимодействие с курсором мыши */
@@ -119,7 +125,7 @@ h2.title {
 /* (Узнать больше об интенсиве) */
 .more .more_text { 
     color: #ffffff;
-    font-family: "Roboto - Thin";
+    font-family: "Roboto";
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -172,6 +178,7 @@ h2.title {
     text-align: center;
 }
 
+/* Второй блок сайта */
 .waiting .waiting_wrapper {
     display: flex;
     justify-content: space-between;
@@ -181,6 +188,7 @@ h2.title {
     margin-top: 45px;
 }
 
+/* (Всего за два бесплатных...) + waiting.img */
 .waiting .waiting_wrapper .waiting_item {
     width: 339px;
     text-align: center;
@@ -206,15 +214,17 @@ h2.title {
     padding: 102px 0 107px 0;
 }
 
+/* (Что такое оптимизация...) + (10 сентября в...) */
 .optimization .optimization_header, .date .date_wrapper .date_descr {
     margin-left: 391px;
     color: #299cbd;
-    font-family: "Roboto - Black";
+    font-family: "Roboto";
     font-size: 29px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
+/* (На просторах интернета...) */
 .optimization .optimization_text {
     margin-top: 25px;
     margin-left: 391px;
@@ -222,12 +232,13 @@ h2.title {
     font-style: 17px;
     font-weight: 300;
     line-height: 27px;
-    font-family: "Roboto - Light";
+    font-family: "Roboto";
     font-weight: 300;
 }
 
+/* (Мы научим вас, как сделать...) */
 .optimization .optimization_text span {
-    font-family: "Roboto - Bold";
+    font-family: "Roboto";
     font-weight: 700;
 }
 
@@ -251,6 +262,7 @@ h2.title {
     justify-content: space-between;
 }
 
+/* finish_round + finish_icon + finish descr */
 .finish .finish_wrapper .finish_item {
     width: 204px;
 }
@@ -266,6 +278,7 @@ h2.title {
     border-radius: 100%;
 }
 
+/* Весь текст в finish_descr */
 .finish .finish_wrapper .finish_item .finish_descr {
     margin-top: 25px;
     text-align: center;
@@ -283,6 +296,7 @@ h2.title {
     padding: 88px 0 88px 0;
 }
 
+/* (Для всех участников интенсива...) */
 .present .present_wrapper .present_text {
     margin-top: 45px;
     color: #252525;
@@ -292,8 +306,14 @@ h2.title {
     text-align: center;
 }
 
+/* Кнопка (Записаться на интенсив!) */
 .present .present_wrapper .present_btn {
     margin-top: 51px;
+}
+
+/* Шестой блок сайта */
+.date {
+    padding: 89px 0 50px 0;
 }
 
 .date .date_wrapper .date_img {
@@ -301,14 +321,12 @@ h2.title {
     margin: 0 auto;
 }
 
-.date {
-    padding: 89px 0 50px 0;
-}
-
+/* (Первый вебинар состоится:) */
 .date .date_wrapper .date_header {
     margin-top: 36px;
 }
 
+/* (10 сентября в...) */
 .date .date_wrapper .date_descr {
     margin-top: 30px;
     margin-left: 0;
@@ -316,16 +334,19 @@ h2.title {
     
 }
 
+/* (Успейте записаться, количество мест ограничено!) */
 .date .date_wrapper .date_subheader {
     margin-top: 25px;
 }
 
+/* Седьмой блок сайта */
 .contacts {
     height: 169px;
     background-color: rgb(26, 26, 26);
     padding: 58px 0 70px 0;
 }
 
+/* Кнопки-ссылки на контактные данные: contacts_supp (Служба поддержки) + policy (Политика конфид.) */
 .contacts .contacts_wrapper .contacts_btn {
     text-align: center;
     color: #888888;
@@ -334,10 +355,6 @@ h2.title {
     line-height: 21px;
 }
 
-.contacts .contacts_wrapper .contacts_btn .contacts_supp {
-    color: #888888;
-}
-
-.contacts .contacts_wrapper .contacts_btn .policy {
+.contacts .contacts_wrapper .contacts_btn .contacts_supp, .contacts .contacts_wrapper .contacts_btn .policy {
     color: #888888;
 }
